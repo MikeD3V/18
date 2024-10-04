@@ -37,7 +37,7 @@ function startBlowDetection(stream) {
         }
         const averageVolume = sum / bufferLength;
 
-        if (averageVolume > 40) {  // Threshold can be adjusted
+        if (averageVolume > 60) {  // Threshold can be adjusted
             blowOutCandle();
         }
 
@@ -61,6 +61,8 @@ function blowOutCandle() {
     // Play the birthday song
     const audio = document.getElementById('birthday-song');
     audio.play();
+    const boomaudio = document.getElementById('boom');
+    boomaudio.play();
 
 }
 
