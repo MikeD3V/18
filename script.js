@@ -1,4 +1,5 @@
 // Function to request microphone permission first
+alert("Blow the candle");
 function requestMicPermission() {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         console.log("Requesting microphone permission...");
