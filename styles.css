@@ -203,3 +203,92 @@ p {
   font-size: 0.8em;
   line-height: 2em;
 }
+
+/* Confetti Styles */
+.confetti-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #ff6699; /* Pink confetti */
+  border-radius: 50%;
+  animation: confetti-fall 5s linear infinite;
+}
+
+.confetti:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+  background: #ff99cc; /* Light pink */
+}
+
+.confetti:nth-child(2) {
+  left: 20%;
+  animation-delay: 1s;
+  background: #ffccff; /* Lighter pink */
+}
+
+.confetti:nth-child(3) {
+  left: 30%;
+  animation-delay: 2s;
+  background: #ff6699; /* Pink */
+}
+
+.confetti:nth-child(4) {
+  left: 40%;
+  animation-delay: 3s;
+  background: #ff99cc; /* Light pink */
+}
+
+.confetti:nth-child(5) {
+  left: 50%;
+  animation-delay: 4s;
+  background: #ffccff; /* Lighter pink */
+}
+
+.confetti:nth-child(6) {
+  left: 60%;
+  animation-delay: 0.5s;
+  background: #ff6699; /* Pink */
+}
+
+.confetti:nth-child(7) {
+  left: 70%;
+  animation-delay: 1.5s;
+  background: #ff99cc; /* Light pink */
+}
+
+.confetti:nth-child(8) {
+  left: 80%;
+  animation-delay: 2.5s;
+  background: #ffccff; /* Lighter pink */
+}
+
+.confetti:nth-child(9) {
+  left: 90%;
+  animation-delay: 3.5s;
+  background: #ff6699; /* Pink */
+}
+
+.confetti:nth-child(10) {
+  left: 100%;
+  animation-delay: 4.5s;
+  background: #ff99cc; /* Light pink */
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
