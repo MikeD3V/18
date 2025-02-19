@@ -1,6 +1,7 @@
 // Function to request microphone permission first
-alert("Happy birthday els wakoy mahatag gift nimo kani rajud,okay na guru ni oi HAHAHAHAHAHHAHAHAH");
+alert("Happy birthday jat, wakoy mahatag gift nimo kani rajud,ayawg reklamo");
 alert("Make wish");
+alert("Blow the candle");
 function requestMicPermission() {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         console.log("Requesting microphone permission...");
